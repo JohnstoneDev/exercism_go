@@ -5,7 +5,7 @@ import "errors"
 func CollatzConjecture(n int) (int, error) {
 	count := 0
 
-	if n < 0 {
+	if n <= 0 {
 		return count, errors.New("number is negative")
 	}
 
