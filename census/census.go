@@ -41,5 +41,5 @@ func Count(residents []*Resident) int {
 		}
 	}
 
-	return count;
+	return count
 }

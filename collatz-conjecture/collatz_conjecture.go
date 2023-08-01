@@ -14,7 +14,7 @@ func CollatzConjecture(n int) (int, error) {
 		if divisible {
 			n /= 2
 		} else {
-			n = 3 * n +1
+			n = 3 * n + 1
 		}
 		count++
 	}
