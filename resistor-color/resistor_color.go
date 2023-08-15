@@ -20,18 +20,13 @@ func Colors() []string {
 
 // ColorCode returns the resistance value of the given color.
 func ColorCode(color string) int {
-	mappedColors := map[string]int {
-		"black" : 0,
-		"brown" : 1,
-		"red" : 2,
-		"orange" : 3,
-		"yellow" : 4,
-		"green" : 5,
-		"blue" : 6,
-		"violet" : 7,
-		"grey" : 8,
-		"white" :9,
+	colors := Colors();
+
+	for i, value := range colors {
+		if value == color {
+			return i
+		}
 	}
 
-	return mappedColors[color]
+	return -1
 }
