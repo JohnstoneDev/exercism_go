@@ -1,7 +1,6 @@
 package anagram
 
 import (
-	_ "fmt"
 	"sort"
 	"strings"
 )
@@ -18,7 +17,7 @@ func Detect(subject string, candidates []string) []string {
 		sort.Strings(wordChars)
 		sortedWord := strings.Join(wordChars, "")
 
-		if subject == word || strings.EqualFold(subject, word) {
+		if strings.EqualFold(subject, word) {
 			continue
 		}
 
