@@ -35,6 +35,7 @@ func (numStr ByWeight) Less(i, j int) bool {
   weighI  := calculateWeight(numStr[i])
   weightJ := calculateWeight(numStr[j])
 
+  // if the weight is the same, return the first one in the list
   if weighI == weightJ {
     return numStr[i] < numStr[j]
   }
