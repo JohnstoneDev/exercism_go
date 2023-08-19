@@ -1,5 +1,4 @@
 package paasio
-
 import (
 	"io"
 	"sync"
